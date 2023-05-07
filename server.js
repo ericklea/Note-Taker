@@ -7,7 +7,7 @@ const PORT = 3001;
 //Creating express app
 const app = express();
 
-//Setting up routes
+//GET route for notes
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, './public/notes.html'));
 });
