@@ -8,10 +8,10 @@ To run this application, install VSCode, install npm, input npm start in the ter
 To use this application, follow this link
 https://.ericklea.github.io/note-taker/
 You will be presented with a landing page. Press the button "get started"
-![image of landing page]()
+![image of landing page](images/landingpage.png)
 Next, you will be presented with the note taking page. On this page, input a note title and note conents then press the save button to save the notes
-![image of note taking]()
+![image of note taking](images/noteexample.png)
 After you click the save button, you will see your note appear on the left side of the page, and you can select previous notes to populate on the page if you wish.
-![image of saved note]()
+![image of saved note](images/notesaved.png)
 # Credits
 For this application I utilized starter code provided to me by The University of Utah Coding Bootcamp and code from in class activities. Additionally, I received ideas from https://youtube.com and https://w3schools.com. As well I recevied help building this application from University of Utah Coding Bootcamp tutor Katie Redford.
