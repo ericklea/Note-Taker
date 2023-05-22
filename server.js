@@ -33,7 +33,16 @@ app.get('/api/notes', (req, res) => {
 });
 //POST route for notes
 app.post('/api/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, './db/db.json'));
+    const newNote = req.body;
+    newNote.id = dbNotes.length.toString();
+    dbNotes.push(newNote);
+    fs.writeFile('./db/db.json', JSON.stringify(dbNotes), (err) => {
+        if (err) {
+            console.log(err);
+        } else {
+            res.json(newNote);
+        }
+    });
 });
 
 
